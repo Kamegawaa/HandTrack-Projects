@@ -1,33 +1,36 @@
-LAB10 - Projeto Final
-Controle de LED Using Python,Mediapipe & Arduino | OpenCV Python l Python e integração com Arduino
+# Controle de LED com Python, Mediapipe & Arduino | OpenCV Python | Integração com Arduino
 
-Primeiro a prototipação do hardware no Arduino no Tinkercad, um website para a prototipação do sistema do hardware com uma fácil aplicação, montagem e entendimento. Com esse software primeiro ajustei todos os Jumpers, Leds e portas digitais do arduíno. 
- 
-Com protótipo feito e com a biblioteca StandardFirmata já instalada na placa, fizemos os testes de integração. Então com tudo certo passei para a montagem física.
- 
-Hardware físico já montado. Então partimos para a programação em python para fazer o hand scanner para acender os Leds conforme a quantidade de dedos contados levantados contados pelo scanner do sistema. 
+Este projeto foi desenvolvido durante o primeiro semestre na FATEC - Carapicuíba, como parte da disciplina de Laboratório de Hardware.
 
+Neste projeto, adaptei um Arduino e alguns LEDs para controlar o acendimento de LEDs com base no número de dedos levantados, usando mediapipe para detectar os dedos e realizar cálculos para determinar a quantidade de dedos levantados.
 
-Primeiro fizemos a lógica da leitura das mãos utilizando Mediapipi e OpenCV. Então vamos para o código para realizar tanto a abertura da câmera e leitura das mãos e também realizar a contagem dos dedos levantavam com uma matemática de pontos de coordenadas.  
- 
-Aqui já realizamos o entendimento da biblioteca e como se faz o hand scann, também como fazer a logica matemática para saber quais dedos estão levantados ou não. Agora partimos para a aplicação desses inputs dos dedos levantados para os inputs para ascender os leds do hardware previamente montado.
- 
-Aqui temos os dois códigos para o perfeito funcionamento da nossa aplicação. No código da direita temos a importação das bibliotecas, após temos a abertura do vídeo e atribuindo ele a um laço infinito, e também atribuindo um quantidade de dedos detectados e dedos levantados, após fazemos a logica matemática para contar os dedos levantados utilizando as coordenadas dos pontos da mão que são os pontinhos vermelhos em cada extremidade da mão, quando o numero da ponta tem um valor inferior de coordenada de um ponto 2 números abaixo na matriz dos pontos significa que o dedo esta abaixado, logo se a coordenada do dedo é superior a do seu relativo em 1 ponto abaixo na matriz ele está levantado. 
-E no código da esquerda vemos essa lógica sendo aplicada para que esses inputs ascendam os leds. 
- 
- 
+## Tecnologias Utilizadas
 
+### Protótipação
+- **Tinkercad**: Utilizado para a construção digital do hardware.
 
+### Backend
+- **C++**: Para configuração da placa Arduino Uno.
+- **Python**: Para o funcionamento geral do sistema.
 
-# Vídeo base para o projeto.
-https://www.youtube.com/watch?v=hKbtfto9trw&t=11s
+## Vídeos de Referência
 
-# Vídeo para o entendimento do handscaner.
-https://www.youtube.com/watch?v=RbqGPFrWZC8
+- [Vídeo base para o projeto](https://www.youtube.com/watch?v=hKbtfto9trw&t=11s)
+- [Vídeo para entendimento do HandScanner](https://www.youtube.com/watch?v=RbqGPFrWZC8)
 
-#As resposta sobre a questão do pyfirmata no StackOverflow .https://stackoverflow.com/questions/74585622/pyfirmata-gives-error-module-inspect-has-no-attribute-getargspec
+## Problema Resolvido
 
-# Correção de alguns erros pelo StackOverflow corrigindo a versão do python e trocando a linha de código no arquivo pyfirmata de: 
-len_args = len(inspect.getargspec(func)[0]) para 
-len_args = len(inspect.getfullargspec(func)[0]) 
+Durante o desenvolvimento, encontrei um problema relacionado ao uso do **pyfirmata**, que resultava no seguinte erro: `module 'inspect' has no attribute 'getargspec'`. Esse erro foi resolvido com a ajuda de uma solução encontrada no StackOverflow.
+
+- [Resposta no StackOverflow](https://stackoverflow.com/questions/74585622/pyfirmata-gives-error-module-inspect-has-no-attribute-getargspec)
+
+### Correção Aplicada
+
+A correção foi feita alterando a versão do Python e modificando o código no arquivo `pyfirmata.py`, substituindo a linha:
+
+```python
+len_args = len(inspect.getargspec(func)[0])
+
+len_args = len(inspect.getfullargspec(func)[0])
+
 
