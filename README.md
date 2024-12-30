@@ -34,5 +34,4 @@ len_args = len(inspect.getargspec(func)[0])
 len_args = len(inspect.getfullargspec(func)[0])
 
 ```
-### Demo https://i.imgur.com/nqTiED8.mp4
-
+[![Clique para assistir o vídeo](https://i.imgur.com/nqTiED8.mp4)](https://i.imgur.com/nqTiED8.mp4)
