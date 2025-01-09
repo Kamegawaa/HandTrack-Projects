@@ -4,7 +4,7 @@ Este projeto foi desenvolvido durante o primeiro semestre na FATEC - Carapicuíb
 
 Neste projeto, adaptei um Arduino e alguns LEDs para controlar o acendimento de LEDs com base no número de dedos levantados, usando mediapipe para detectar os dedos e realizar cálculos para determinar a quantidade de dedos levantados.
 
-<img src="https://i.ibb.co/F72Zd2B/hardware1.png" alt="Tinkercad">
+<img src="https://ibb.co/sFDJhvr" alt="Pic">
 
 ### Tecnologias Utilizadas
 
@@ -14,6 +14,8 @@ Neste projeto, adaptei um Arduino e alguns LEDs para controlar o acendimento de 
 #### Backend
 - **C++**: Para configuração da placa Arduino Uno.
 - **Python**: Para o funcionamento geral do sistema.
+
+<img src="https://i.ibb.co/F72Zd2B/hardware1.png" alt="Tinkercad">
 
 ### Vídeos de Referência
 
@@ -27,6 +29,8 @@ Durante o desenvolvimento, encontrei um problema relacionado ao uso do **pyfirma
 - [Resposta no StackOverflow](https://stackoverflow.com/questions/74585622/pyfirmata-gives-error-module-inspect-has-no-attribute-getargspec)
 
 #### Correção Aplicada
+
+<img src="[https://i.ibb.co/F72Zd2B/hardware1.png](https://ibb.co/PMqYfXP)" alt="Backend">
 
 A correção foi feita alterando a versão do Python e modificando o código no arquivo `pyfirmata.py`, substituindo a linha:
 
