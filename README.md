@@ -4,6 +4,8 @@ Este projeto foi desenvolvido durante o primeiro semestre na FATEC - Carapicuíb
 
 Neste projeto, adaptei um Arduino e alguns LEDs para controlar o acendimento de LEDs com base no número de dedos levantados, usando mediapipe para detectar os dedos e realizar cálculos para determinar a quantidade de dedos levantados.
 
+<img src="https://i.ibb.co/F72Zd2B/hardware1.png" alt="Tinkercad">
+
 ### Tecnologias Utilizadas
 
 #### Protótipação
