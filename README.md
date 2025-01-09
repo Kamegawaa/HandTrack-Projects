@@ -30,7 +30,6 @@ Durante o desenvolvimento, encontrei um problema relacionado ao uso do **pyfirma
 
 #### Correção Aplicada
 
-<img src="[https://i.ibb.co/F72Zd2B/hardware1.png](https://ibb.co/PMqYfXP)" alt="Backend">
 
 A correção foi feita alterando a versão do Python e modificando o código no arquivo `pyfirmata.py`, substituindo a linha:
 
@@ -40,5 +39,8 @@ len_args = len(inspect.getargspec(func)[0])
 len_args = len(inspect.getfullargspec(func)[0])
 
 ```
+<img src="https://i.ibb.co/HC52kwb/hardware2.png" alt="Backend">
+![Texto Alternativo]([URL_da_Imagem](https://i.ibb.co/HC52kwb/hardware2.png))
+
 ##### Demo [Clique aqui para assistir](https://i.imgur.com/nqTiED8.mp4)
 
