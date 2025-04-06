@@ -41,5 +41,4 @@ len_args = len(inspect.getfullargspec(func)[0])
 ```
 <img src="https://i.ibb.co/HC52kwb/hardware2.png" alt="Backend">
 
-##### Demo [Clique aqui para assistir](link)
 
